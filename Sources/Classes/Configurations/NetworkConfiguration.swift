@@ -9,7 +9,7 @@ import Foundation
 import Rudder
 
 @objc(RSNetworkConfiguration)
-open class NetworkConfiguration: RSConfiguration {
+open class NetworkConfiguration: NSObject, RSConfiguration {
     var dataPlaneUrl: String = RSDataPlaneUrl
     
     var controlPlaneUrl: String = RSControlPlaneUrl

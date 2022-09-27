@@ -30,7 +30,7 @@ public enum LogLevel: Int {
 }
 
 @objc(RSTrackerConfiguration)
-open class TrackerConfiguration: RSConfiguration {
+open class TrackerConfiguration: NSObject, RSConfiguration {
     
     @objc
     public var appId: String = ""

@@ -8,7 +8,7 @@
 import Foundation
 
 @objc(RSSessionConfiguration)
-open class SessionConfiguration: RSConfiguration {
+open class SessionConfiguration: NSObject, RSConfiguration {
     private var _foregroundTimeoutInSeconds: Int = 300
     var foregroundTimeoutInSeconds: Int {
         return _foregroundTimeoutInSeconds

@@ -8,6 +8,6 @@
 import Foundation
 
 @objc
-open class RSConfiguration: NSObject {
+public protocol RSConfiguration {
 
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 @objc(RSSubjectConfiguration)
-open class SubjectConfiguration: RSConfiguration {    
+open class SubjectConfiguration: NSObject, RSConfiguration {    
     @objc
     public var userId: String?
     
