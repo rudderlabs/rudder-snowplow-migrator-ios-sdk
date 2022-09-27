@@ -182,6 +182,11 @@ open class TrackerConfiguration: RSConfiguration {
     }
     
     @objc
+    public override init() {
+        
+    }
+    
+    @objc
     public init(dictionary: [String: Any]) {
         appId = (dictionary["appId"] as? String) ?? ""
         base64Encoding = (dictionary["base64encoding"] as? Bool) ?? true

@@ -157,6 +157,11 @@ open class SubjectConfiguration: RSConfiguration {
     }
     
     @objc
+    public override init() {
+        
+    }
+    
+    @objc
     public init(dictionary: [String: Any]) {
         userId = dictionary["userId"] as? String
         networkUserId = dictionary["networkUserId"] as? String
