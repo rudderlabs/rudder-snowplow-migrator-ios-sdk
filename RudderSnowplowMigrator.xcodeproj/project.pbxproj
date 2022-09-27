@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72D7CF489BBA26A98BCEF8C1 /* Pods_RudderSnowplowMigrator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDADE0C99C1A6B52AEAD5DEA /* Pods_RudderSnowplowMigrator.framework */; };
+		ED0D832A28E1F96500DF2F56 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D832928E1F96500DF2F56 /* ScreenView.swift */; };
+		ED5C261328D8C05400B733F0 /* RudderSnowplowMigrator.docc in Sources */ = {isa = PBXBuildFile; fileRef = ED5C261228D8C05400B733F0 /* RudderSnowplowMigrator.docc */; };
+		ED5C261928D8C05400B733F0 /* RudderSnowplowMigrator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5C260E28D8C05400B733F0 /* RudderSnowplowMigrator.framework */; };
+		ED5C261E28D8C05400B733F0 /* RudderSnowplowMigratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C261D28D8C05400B733F0 /* RudderSnowplowMigratorTests.swift */; };
+		ED5C261F28D8C05400B733F0 /* RudderSnowplowMigrator.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5C261128D8C05400B733F0 /* RudderSnowplowMigrator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED5C267128D8CC6E00B733F0 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267028D8CC6E00B733F0 /* NetworkConfiguration.swift */; };
+		ED5C267328D8D07C00B733F0 /* SessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267228D8D07C00B733F0 /* SessionConfiguration.swift */; };
+		ED5C267528D8E9DE00B733F0 /* RudderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267428D8E9DE00B733F0 /* RudderClient.swift */; };
+		ED5C267928D98D9100B733F0 /* TrackerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */; };
+		ED5C267B28D99A2400B733F0 /* RSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */; };
+		ED9DAF8D28D9C5B300CC0C95 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DAF8C28D9C5B300CC0C95 /* Event.swift */; };
+		ED9DAF8F28D9C5D800CC0C95 /* Structured.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DAF8E28D9C5D800CC0C95 /* Structured.swift */; };
+		ED9DAF9128DA055700CC0C95 /* SubjectConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DAF9028DA055700CC0C95 /* SubjectConfiguration.swift */; };
+		EDBEE70728E2C25000BC097F /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBEE70628E2C25000BC097F /* Background.swift */; };
+		EDBEE70928E2C6D900BC097F /* Foreground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBEE70828E2C6D900BC097F /* Foreground.swift */; };
+		EDBEE70B28E2CAF500BC097F /* SelfDescribing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBEE70A28E2CAF500BC097F /* SelfDescribing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED5C261A28D8C05400B733F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED5C260528D8C05400B733F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5C260D28D8C05400B733F0;
+			remoteInfo = RudderSnowplowMigrator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35FCF33F25EF7E4445C20765 /* Pods-RudderSnowplowMigrator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderSnowplowMigrator.debug.xcconfig"; path = "Target Support Files/Pods-RudderSnowplowMigrator/Pods-RudderSnowplowMigrator.debug.xcconfig"; sourceTree = "<group>"; };
+		AFE2476A3EAE55D9B2621469 /* Pods-RudderSnowplowMigrator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderSnowplowMigrator.release.xcconfig"; path = "Target Support Files/Pods-RudderSnowplowMigrator/Pods-RudderSnowplowMigrator.release.xcconfig"; sourceTree = "<group>"; };
+		DDADE0C99C1A6B52AEAD5DEA /* Pods_RudderSnowplowMigrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderSnowplowMigrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0D832228E1A17D00DF2F56 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		ED0D832328E1A17D00DF2F56 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		ED0D832428E1A17D00DF2F56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ED0D832528E1A17D00DF2F56 /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CODEOWNERS; sourceTree = "<group>"; };
+		ED0D832628E1A17D00DF2F56 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED0D832728E1A17D00DF2F56 /* RudderSnowplowMigrator.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RudderSnowplowMigrator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ED0D832828E1A17D00DF2F56 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ED0D832928E1F96500DF2F56 /* ScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
+		ED5C260E28D8C05400B733F0 /* RudderSnowplowMigrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RudderSnowplowMigrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5C261128D8C05400B733F0 /* RudderSnowplowMigrator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RudderSnowplowMigrator.h; sourceTree = "<group>"; };
+		ED5C261228D8C05400B733F0 /* RudderSnowplowMigrator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RudderSnowplowMigrator.docc; sourceTree = "<group>"; };
+		ED5C261828D8C05400B733F0 /* RudderSnowplowMigratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RudderSnowplowMigratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5C261D28D8C05400B733F0 /* RudderSnowplowMigratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudderSnowplowMigratorTests.swift; sourceTree = "<group>"; };
+		ED5C267028D8CC6E00B733F0 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		ED5C267228D8D07C00B733F0 /* SessionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionConfiguration.swift; sourceTree = "<group>"; };
+		ED5C267428D8E9DE00B733F0 /* RudderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudderClient.swift; sourceTree = "<group>"; };
+		ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerConfiguration.swift; sourceTree = "<group>"; };
+		ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSConfiguration.swift; sourceTree = "<group>"; };
+		ED9DAF8C28D9C5B300CC0C95 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		ED9DAF8E28D9C5D800CC0C95 /* Structured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structured.swift; sourceTree = "<group>"; };
+		ED9DAF9028DA055700CC0C95 /* SubjectConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectConfiguration.swift; sourceTree = "<group>"; };
+		EDBEE70628E2C25000BC097F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		EDBEE70828E2C6D900BC097F /* Foreground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foreground.swift; sourceTree = "<group>"; };
+		EDBEE70A28E2CAF500BC097F /* SelfDescribing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfDescribing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED5C260B28D8C05400B733F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D7CF489BBA26A98BCEF8C1 /* Pods_RudderSnowplowMigrator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5C261528D8C05400B733F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5C261928D8C05400B733F0 /* RudderSnowplowMigrator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81B308EF7151663EE32D9C42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDADE0C99C1A6B52AEAD5DEA /* Pods_RudderSnowplowMigrator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED5C260428D8C05400B733F0 = {
+			isa = PBXGroup;
+			children = (
+				ED0D832228E1A17D00DF2F56 /* CODE_OF_CONDUCT.md */,
+				ED0D832528E1A17D00DF2F56 /* CODEOWNERS */,
+				ED0D832328E1A17D00DF2F56 /* CONTRIBUTING.md */,
+				ED0D832828E1A17D00DF2F56 /* LICENSE */,
+				ED0D832628E1A17D00DF2F56 /* Podfile */,
+				ED0D832428E1A17D00DF2F56 /* README.md */,
+				ED0D832728E1A17D00DF2F56 /* RudderSnowplowMigrator.podspec */,
+				ED5C261028D8C05400B733F0 /* Sources */,
+				ED5C261C28D8C05400B733F0 /* RudderSnowplowMigratorTests */,
+				ED5C260F28D8C05400B733F0 /* Products */,
+				F656F8E6A48B2A5A1937B0E4 /* Pods */,
+				81B308EF7151663EE32D9C42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED5C260F28D8C05400B733F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C260E28D8C05400B733F0 /* RudderSnowplowMigrator.framework */,
+				ED5C261828D8C05400B733F0 /* RudderSnowplowMigratorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED5C261028D8C05400B733F0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C262928D8C49B00B733F0 /* Classes */,
+				ED5C262828D8C47400B733F0 /* SDKInfo */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ED5C261C28D8C05400B733F0 /* RudderSnowplowMigratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C261D28D8C05400B733F0 /* RudderSnowplowMigratorTests.swift */,
+			);
+			path = RudderSnowplowMigratorTests;
+			sourceTree = "<group>";
+		};
+		ED5C262828D8C47400B733F0 /* SDKInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C261228D8C05400B733F0 /* RudderSnowplowMigrator.docc */,
+				ED5C261128D8C05400B733F0 /* RudderSnowplowMigrator.h */,
+			);
+			path = SDKInfo;
+			sourceTree = "<group>";
+		};
+		ED5C262928D8C49B00B733F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DAF8B28D9C50300CC0C95 /* Events */,
+				ED5C266F28D8CC1B00B733F0 /* Configurations */,
+				ED5C267428D8E9DE00B733F0 /* RudderClient.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ED5C266F28D8CC1B00B733F0 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C267028D8CC6E00B733F0 /* NetworkConfiguration.swift */,
+				ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */,
+				ED5C267228D8D07C00B733F0 /* SessionConfiguration.swift */,
+				ED9DAF9028DA055700CC0C95 /* SubjectConfiguration.swift */,
+				ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		ED9DAF8B28D9C50300CC0C95 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				EDBEE70628E2C25000BC097F /* Background.swift */,
+				ED9DAF8C28D9C5B300CC0C95 /* Event.swift */,
+				EDBEE70828E2C6D900BC097F /* Foreground.swift */,
+				ED0D832928E1F96500DF2F56 /* ScreenView.swift */,
+				EDBEE70A28E2CAF500BC097F /* SelfDescribing.swift */,
+				ED9DAF8E28D9C5D800CC0C95 /* Structured.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		F656F8E6A48B2A5A1937B0E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35FCF33F25EF7E4445C20765 /* Pods-RudderSnowplowMigrator.debug.xcconfig */,
+				AFE2476A3EAE55D9B2621469 /* Pods-RudderSnowplowMigrator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED5C260928D8C05400B733F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5C261F28D8C05400B733F0 /* RudderSnowplowMigrator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ED5C260D28D8C05400B733F0 /* RudderSnowplowMigrator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5C262228D8C05400B733F0 /* Build configuration list for PBXNativeTarget "RudderSnowplowMigrator" */;
+			buildPhases = (
+				4773BB115123551DB80F3156 /* [CP] Check Pods Manifest.lock */,
+				ED5C260928D8C05400B733F0 /* Headers */,
+				ED5C260A28D8C05400B733F0 /* Sources */,
+				ED5C260B28D8C05400B733F0 /* Frameworks */,
+				ED5C260C28D8C05400B733F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RudderSnowplowMigrator;
+			productName = RudderSnowplowMigrator;
+			productReference = ED5C260E28D8C05400B733F0 /* RudderSnowplowMigrator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED5C261728D8C05400B733F0 /* RudderSnowplowMigratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5C262528D8C05400B733F0 /* Build configuration list for PBXNativeTarget "RudderSnowplowMigratorTests" */;
+			buildPhases = (
+				ED5C261428D8C05400B733F0 /* Sources */,
+				ED5C261528D8C05400B733F0 /* Frameworks */,
+				ED5C261628D8C05400B733F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED5C261B28D8C05400B733F0 /* PBXTargetDependency */,
+			);
+			name = RudderSnowplowMigratorTests;
+			productName = RudderSnowplowMigratorTests;
+			productReference = ED5C261828D8C05400B733F0 /* RudderSnowplowMigratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED5C260528D8C05400B733F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					ED5C260D28D8C05400B733F0 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					ED5C261728D8C05400B733F0 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = ED5C260828D8C05400B733F0 /* Build configuration list for PBXProject "RudderSnowplowMigrator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED5C260428D8C05400B733F0;
+			productRefGroup = ED5C260F28D8C05400B733F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED5C260D28D8C05400B733F0 /* RudderSnowplowMigrator */,
+				ED5C261728D8C05400B733F0 /* RudderSnowplowMigratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED5C260C28D8C05400B733F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5C261628D8C05400B733F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4773BB115123551DB80F3156 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RudderSnowplowMigrator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED5C260A28D8C05400B733F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBEE70728E2C25000BC097F /* Background.swift in Sources */,
+				ED9DAF8F28D9C5D800CC0C95 /* Structured.swift in Sources */,
+				ED5C261328D8C05400B733F0 /* RudderSnowplowMigrator.docc in Sources */,
+				ED5C267328D8D07C00B733F0 /* SessionConfiguration.swift in Sources */,
+				ED5C267128D8CC6E00B733F0 /* NetworkConfiguration.swift in Sources */,
+				EDBEE70B28E2CAF500BC097F /* SelfDescribing.swift in Sources */,
+				ED0D832A28E1F96500DF2F56 /* ScreenView.swift in Sources */,
+				ED5C267928D98D9100B733F0 /* TrackerConfiguration.swift in Sources */,
+				ED5C267528D8E9DE00B733F0 /* RudderClient.swift in Sources */,
+				ED9DAF8D28D9C5B300CC0C95 /* Event.swift in Sources */,
+				ED5C267B28D99A2400B733F0 /* RSConfiguration.swift in Sources */,
+				EDBEE70928E2C6D900BC097F /* Foreground.swift in Sources */,
+				ED9DAF9128DA055700CC0C95 /* SubjectConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5C261428D8C05400B733F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5C261E28D8C05400B733F0 /* RudderSnowplowMigratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED5C261B28D8C05400B733F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5C260D28D8C05400B733F0 /* RudderSnowplowMigrator */;
+			targetProxy = ED5C261A28D8C05400B733F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED5C262028D8C05400B733F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED5C262128D8C05400B733F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED5C262328D8C05400B733F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FCF33F25EF7E4445C20765 /* Pods-RudderSnowplowMigrator.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigrator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		ED5C262428D8C05400B733F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFE2476A3EAE55D9B2621469 /* Pods-RudderSnowplowMigrator.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigrator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos watchsimulator watchos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		ED5C262628D8C05400B733F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED5C262728D8C05400B733F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED5C260828D8C05400B733F0 /* Build configuration list for PBXProject "RudderSnowplowMigrator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5C262028D8C05400B733F0 /* Debug */,
+				ED5C262128D8C05400B733F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5C262228D8C05400B733F0 /* Build configuration list for PBXNativeTarget "RudderSnowplowMigrator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5C262328D8C05400B733F0 /* Debug */,
+				ED5C262428D8C05400B733F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5C262528D8C05400B733F0 /* Build configuration list for PBXNativeTarget "RudderSnowplowMigratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5C262628D8C05400B733F0 /* Debug */,
+				ED5C262728D8C05400B733F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED5C260528D8C05400B733F0 /* Project object */;
+}
