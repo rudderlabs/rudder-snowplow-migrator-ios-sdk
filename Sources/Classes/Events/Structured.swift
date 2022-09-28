@@ -31,6 +31,9 @@ open class Structured: NSObject, Event {
     public var value: NSNumber?
     
     @objc
+    public var properties: [String: Any]?
+    
+    @objc
     public init(category: String, action: String) {
         _category = category
         _action = action
@@ -54,6 +57,13 @@ open class Structured: NSObject, Event {
         return self
     }
     
+    
+    @discardableResult @objc
+    public func properties(_ properties: [String: Any]?) -> Structured {
+        self.properties = properties
+        return self
+    }
+    
     public func getProperties() -> [String: Any]? {
         var properties = [String: Any]()
         let mirror = Mirror(reflecting: self)
@@ -63,6 +73,9 @@ open class Structured: NSObject, Event {
                     properties[key.replacingOccurrences(of: "_", with: "")] = attribute.value
                 }
             }
+        }
+        if let structuredProperties = self.properties {
+            properties.merge(structuredProperties) { (new, _) in new }
         }
         return properties.count > 0 ? properties : nil
     }

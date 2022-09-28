@@ -207,7 +207,7 @@ open class TrackerConfiguration: NSObject, RSConfiguration {
         userAnonymisation = (dictionary["userAnonymisation"] as? Bool) ?? false
     }
     
-    internal func getRSLogLevel() -> Int32 {
+    private func getRSLogLevel() -> Int32 {
         switch logLevel {
         case .verbose:
             return RSLogLevelVerbose
@@ -218,5 +218,12 @@ open class TrackerConfiguration: NSObject, RSConfiguration {
         case .off:
             return RSLogLevelNone
         }
+    }
+    
+    internal func setTrackerData(to configBuilder: inout RSConfigBuilder) {
+        configBuilder.withLoglevel(getRSLogLevel())
+        configBuilder.withRecordScreenViews(screenViewAutotracking)
+        configBuilder.withTrackLifecycleEvens(lifecycleAutotracking)
+        configBuilder.withAutoSessionTracking(sessionContext)
     }
 }

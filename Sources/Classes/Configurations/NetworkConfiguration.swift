@@ -10,18 +10,32 @@ import Rudder
 
 @objc(RSNetworkConfiguration)
 open class NetworkConfiguration: NSObject, RSConfiguration {
-    var dataPlaneUrl: String = RSDataPlaneUrl
+    private var _dataPlaneUrl: String = RSDataPlaneUrl
+    @objc
+    public var dataPlaneUrl: String {
+        return _dataPlaneUrl
+    }
     
-    var controlPlaneUrl: String = RSControlPlaneUrl
+    private var _controlPlaneUrl: String = RSControlPlaneUrl
+    @objc
+    public var controlPlaneUrl: String {
+        return _controlPlaneUrl
+    }
     
     @objc
     public init(dataPlaneUrl: String, controlPlaneUrl: String) {
-        self.dataPlaneUrl = dataPlaneUrl
-        self.controlPlaneUrl = controlPlaneUrl
+        _dataPlaneUrl = dataPlaneUrl
+        _controlPlaneUrl = controlPlaneUrl
     }
     
     @objc
     public init(dataPlaneUrl: String) {
-        self.dataPlaneUrl = dataPlaneUrl
+        _dataPlaneUrl = dataPlaneUrl
+    }
+    
+    @objc
+    public init(dictionary: [String: Any]) {
+        _dataPlaneUrl = (dictionary["dataPlaneUrl"] as? String) ?? RSDataPlaneUrl
+        _controlPlaneUrl = (dictionary["controlPlaneUrl"] as? String) ?? RSControlPlaneUrl
     }
 }

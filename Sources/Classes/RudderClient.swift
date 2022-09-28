@@ -26,7 +26,7 @@ open class RudderClient: NSObject {
     
     @objc
     public static func createTracker(writeKey: String, network: NetworkConfiguration, configurations: [RSConfiguration]) -> RudderClient {
-        let configBuilder = RSConfigBuilder()
+        var configBuilder = RSConfigBuilder()
             .withDataPlaneUrl(network.dataPlaneUrl)
             .withControlPlaneUrl(network.controlPlaneUrl)
         
@@ -36,15 +36,11 @@ open class RudderClient: NSObject {
         for configuration in configurations {
             switch configuration {
             case let config as SessionConfiguration:
-                configBuilder.withAutoSessionTracking(config.autoTracking)
-                configBuilder.withSessionTimeoutMillis((config.backgroundTimeoutInSeconds * 1000))
+                config.setSessionData(to: &configBuilder)
             case let config as TrackerConfiguration:
-                configBuilder.withLoglevel(config.getRSLogLevel())
-                configBuilder.withRecordScreenViews(config.screenViewAutotracking)
-                configBuilder.withTrackLifecycleEvens(config.lifecycleAutotracking)
+                config.setTrackerData(to: &configBuilder)
             case let config as SubjectConfiguration:
-                userId = config.userId
-                identifyTraits = config.getTraits()
+                config.setUserData(to: &userId, identifyTraits: &identifyTraits)
             default:
                 break
             }
@@ -94,6 +90,17 @@ open class RudderClient: NSObject {
             } else {
                 RSClient.sharedInstance()?.track(e.name)
             }
+        case let e as SelfDescribing:
+            if let payload = e.payload {
+                if let action = payload["action"] as? String {
+                    var properties = payload
+                    properties.removeValue(forKey: "action")
+                    RSClient.sharedInstance()?.track(action, properties: properties)
+                } else {
+                    RSLogger.logDebug("")
+                }
+            }
+            
         default: break
         }
         return UUID()

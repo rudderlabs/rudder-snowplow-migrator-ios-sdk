@@ -156,6 +156,12 @@ open class SubjectConfiguration: NSObject, RSConfiguration {
         return self
     }
     
+    @discardableResult @objc
+    public func traits(_ traits: [String: Any]?) -> SubjectConfiguration {
+        self.traits = traits
+        return self
+    }
+    
     @objc
     public override init() {
         
@@ -172,7 +178,7 @@ open class SubjectConfiguration: NSObject, RSConfiguration {
         language = dictionary["language"] as? String
     }
     
-    internal func getTraits() -> [String: Any]? {
+    private func getTraits() -> [String: Any]? {
         var traits = [String: Any]()
         let mirror = Mirror(reflecting: self)
         for (_, attribute) in mirror.children.enumerated() {
@@ -184,5 +190,10 @@ open class SubjectConfiguration: NSObject, RSConfiguration {
             traits.merge(identifyTraits) { (new, _) in new }
         }
         return traits.count > 0 ? traits : nil
+    }
+    
+    internal func setUserData(to userId: inout String?, identifyTraits: inout [String: Any]?) {
+        userId = self.userId
+        identifyTraits = getTraits()
     }
 }

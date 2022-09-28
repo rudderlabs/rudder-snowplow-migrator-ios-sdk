@@ -43,6 +43,9 @@ open class ScreenView: NSObject, Event {
     public var topViewControllerClassName: String?
     
     @objc
+    public var properties: [String: Any]?
+    
+    @objc
     public init(name: String, screenId: String) {
         _name = name
         _screenId = screenId
@@ -90,13 +93,22 @@ open class ScreenView: NSObject, Event {
         return self
     }
     
+    @discardableResult @objc
+    public func properties(_ properties: [String: Any]?) -> ScreenView {
+        self.properties = properties
+        return self
+    }
+    
     public func getProperties() -> [String: Any]? {
         var properties = [String: Any]()
         let mirror = Mirror(reflecting: self)
         for (_, attribute) in mirror.children.enumerated() {
-            if let key = attribute.label {
+            if let key = attribute.label, key != "_name" {
                 properties[key.replacingOccurrences(of: "_", with: "")] = attribute.value
             }
+        }
+        if let screenProperties = self.properties {
+            properties.merge(screenProperties) { (new, _) in new }
         }
         return properties.count > 0 ? properties : nil
     }

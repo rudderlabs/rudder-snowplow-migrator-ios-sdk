@@ -6,21 +6,21 @@
 //
 
 import Foundation
+import Rudder
 
 @objc(RSSessionConfiguration)
 open class SessionConfiguration: NSObject, RSConfiguration {
     private var _foregroundTimeoutInSeconds: Int = 300
-    var foregroundTimeoutInSeconds: Int {
+    @objc
+    public var foregroundTimeoutInSeconds: Int {
         return _foregroundTimeoutInSeconds
     }
     
     private var _backgroundTimeoutInSeconds: Int = 1800
-    var backgroundTimeoutInSeconds: Int {
+    @objc
+    public var backgroundTimeoutInSeconds: Int {
         return _backgroundTimeoutInSeconds
     }
-    
-    @objc
-    public var autoTracking: Bool = true
     
     @objc
     public override init() {
@@ -45,9 +45,7 @@ open class SessionConfiguration: NSObject, RSConfiguration {
         _backgroundTimeoutInSeconds = backgroundTimeoutInSeconds
     }
     
-    @discardableResult @objc
-    public func autoTracking(_ autoTracking: Bool) -> SessionConfiguration {
-        self.autoTracking = autoTracking
-        return self
+    internal func setSessionData(to configBuilder: inout RSConfigBuilder) {
+        configBuilder.withSessionTimeoutMillis(_backgroundTimeoutInSeconds * 1000)
     }
 }

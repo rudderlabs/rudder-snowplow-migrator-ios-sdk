@@ -17,11 +17,24 @@ open class Background: NSObject, Event {
     }
     
     @objc
+    public var properties: [String: Any]?
+    
+    @discardableResult @objc
+    public func properties(_ properties: [String: Any]?) -> Background {
+        self.properties = properties
+        return self
+    }
+    
+    @objc
     public init(index: NSNumber) {
         _index = index
     }
     
     public func getProperties() -> [String: Any]? {
-        return ["index": _index]
+        var properties: [String: Any] = ["index": _index]
+        if let backgroundProperties = self.properties {
+            properties.merge(backgroundProperties) { (new, _) in new }
+        }
+        return properties
     }
 }

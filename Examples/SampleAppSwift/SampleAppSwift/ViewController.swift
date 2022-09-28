@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         let trackerConfig = TrackerConfiguration()
         trackerConfig.lifecycleAutotracking = true
         
+        
+        
     }
 
 
