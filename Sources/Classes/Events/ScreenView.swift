@@ -103,7 +103,7 @@ open class ScreenView: NSObject, Event {
         var properties = [String: Any]()
         let mirror = Mirror(reflecting: self)
         for (_, attribute) in mirror.children.enumerated() {
-            if let key = attribute.label, key != "_name" {
+            if let key = attribute.label, key != "_name", key != "properties", "\(attribute.value)" != "nil" {
                 properties[key.replacingOccurrences(of: "_", with: "")] = attribute.value
             }
         }

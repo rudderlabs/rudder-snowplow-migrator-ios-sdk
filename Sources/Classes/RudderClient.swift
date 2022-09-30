@@ -86,21 +86,23 @@ open class RudderClient: NSObject {
             }
         case let e as ScreenView:
             if let properties = e.getProperties() {
-                RSClient.sharedInstance()?.track(e.name, properties: properties)
+                RSClient.sharedInstance()?.screen(e.name, properties: properties)
             } else {
-                RSClient.sharedInstance()?.track(e.name)
+                RSClient.sharedInstance()?.screen(e.name)
             }
         case let e as SelfDescribing:
-            if let payload = e.payload {
-                if let action = payload["action"] as? String {
-                    var properties = payload
+            if var properties = e.payload {
+                if let action = properties["action"] as? String {
                     properties.removeValue(forKey: "action")
-                    RSClient.sharedInstance()?.track(action, properties: properties)
+                    if properties.count > 0 {
+                        RSClient.sharedInstance()?.track(action, properties: properties)
+                    } else {
+                        RSClient.sharedInstance()?.track(action)
+                    }
                 } else {
-                    RSLogger.logDebug("")
+                    RSLogger.logDebug("Action field is not present in the SelfDescribing events. Hence dropping the event.")
                 }
-            }
-            
+            }            
         default: break
         }
         return UUID()

@@ -50,7 +50,7 @@ open class SelfDescribingJson: NSObject {
 }
 
 @objc(RSSelfDescribing)
-open class SelfDescribing: NSObject {
+open class SelfDescribing: NSObject, Event {    
     let schema: String
     let payload: [String: Any]?
     
@@ -64,5 +64,9 @@ open class SelfDescribing: NSObject {
     public init(eventData: SelfDescribingJson) {
         schema = eventData.schema
         payload = eventData.data as? [String: Any]
+    }
+    
+    public func getProperties() -> [String : Any]? {
+        return nil
     }
 }

@@ -68,10 +68,8 @@ open class Structured: NSObject, Event {
         var properties = [String: Any]()
         let mirror = Mirror(reflecting: self)
         for (_, attribute) in mirror.children.enumerated() {
-            if let key = attribute.label {
-                if key != "_action" {
-                    properties[key.replacingOccurrences(of: "_", with: "")] = attribute.value
-                }
+            if let key = attribute.label, key != "_action", key != "properties", "\(attribute.value)" != "nil" {
+                properties[key.replacingOccurrences(of: "_", with: "")] = attribute.value
             }
         }
         if let structuredProperties = self.properties {

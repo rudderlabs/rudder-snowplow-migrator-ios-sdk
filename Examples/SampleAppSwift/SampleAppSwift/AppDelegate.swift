@@ -21,25 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let networkConfig = NetworkConfiguration(dataPlaneUrl: DATA_PLANE_URL)
-        
-//        let networkConfig = NetworkConfiguration(dataPlaneUrl: DATA_PLANE_URL, controlPlaneUrl: CONTROL_PLANE_URL)
-        
+                
         let sessionConfig = SessionConfiguration(
                     foregroundTimeout: Measurement(value: 5, unit: .minutes),
                     backgroundTimeout: Measurement(value: 5, unit: .minutes)
                 )
-        
-//        let sessionConfig = SessionConfiguration(foregroundTimeoutInSeconds: 60, backgroundTimeoutInSeconds: 60)
-        SessionConfiguration()
-        
+                
         let trackerConfig = TrackerConfiguration()
             .base64Encoding(false)
-            .logLevel(.off)
+            .logLevel(.debug)
             .deepLinkContext(true)
             .applicationContext(true)
             .platformContext(true)
             .geoLocationContext(true)
-            .lifecycleAutotracking(true)
+            .lifecycleAutotracking(false)
             .diagnosticAutotracking(true)
             .screenViewAutotracking(true)
             .screenContext(true)
@@ -47,22 +42,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .exceptionAutotracking(true)
             .installAutotracking(true)
             .userAnonymisation(false)
+            .sessionContext(true)
             .appId(APP_ID)
         
-        SubjectConfiguration()
+        let subjectConfig = SubjectConfiguration()
+            .userId("user_id")
+            .networkUserId("networkUserId")
+            .traits(["name": "name"])
         
-        let rsclient = RudderClient.createTracker(writeKey: "", network: networkConfig, configurations: [sessionConfig, trackerConfig])
+        let rsclient = RudderClient.createTracker(writeKey: "1wvsoF3Kx2SczQNlx1dvcqW9ODW", network: networkConfig, configurations: [sessionConfig, trackerConfig, subjectConfig])
         
-        let st = Structured(category: "Cat", action: "Action")
+        let structured = Structured(category: "Cat", action: "Action")
+            .properties(["key_1": ["key_key_1": "value_value_1"]])
         
-        rsclient.track(st)
+        rsclient.track(structured)
         
-        SelfDescribingJson(schema: "", andData: st)
-        SelfDescribingJson(schema: "", andDictionary: [:])
+        let screen = ScreenView(name: "Screen_1", screenId: "1")
         
-        SelfDescribing(schema: "", payload: [:])
+        rsclient.track(screen)
         
+        let foreground = Foreground(index: 1)
+            .properties(["key_1": "value_1"])
         
+        rsclient.track(foreground)
+        
+        let background = Background(index: 1)
+            .properties(["key_1": "value_1"])
+        
+        rsclient.track(background)
+        
+        let selfDescribingJson = SelfDescribingJson(schema: "schema", andDictionary: ["action": "Action_2"])
+        let selfDescribing = SelfDescribing(eventData: selfDescribingJson)
+        
+        rsclient.track(selfDescribing)
         return true
     }
 
