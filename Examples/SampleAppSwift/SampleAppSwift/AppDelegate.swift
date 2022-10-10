@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .geoLocationContext(true)
             .lifecycleAutotracking(false)
             .diagnosticAutotracking(true)
-            .screenViewAutotracking(true)
+            .screenViewAutotracking(false)
             .screenContext(true)
             .applicationContext(true)
             .exceptionAutotracking(true)

@@ -12,19 +12,19 @@ import Rudder
 open class RudderClient: NSObject {
     private static let shared = RudderClient()
     
-    @objc
+    @discardableResult @objc
     public static func createTracker(writeKey: String, network: NetworkConfiguration) -> RudderClient {
         let trackerConfig = TrackerConfiguration()
         return createTracker(writeKey: writeKey, network: network, configurations: [trackerConfig])
     }
     
-    @objc
+    @discardableResult @objc
     public static func createTracker(writeKey: String, dataPlaneUrl: String) -> RudderClient {
         let network = NetworkConfiguration(dataPlaneUrl: dataPlaneUrl)
         return createTracker(writeKey: writeKey, network: network)
     }
     
-    @objc
+    @discardableResult @objc
     public static func createTracker(writeKey: String, network: NetworkConfiguration, configurations: [RSConfiguration]) -> RudderClient {
         var configBuilder = RSConfigBuilder()
             .withDataPlaneUrl(network.dataPlaneUrl)
