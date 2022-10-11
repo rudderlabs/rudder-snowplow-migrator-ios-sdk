@@ -45,7 +45,11 @@ open class SelfDescribingJson: NSObject {
     }
     
     private func getAsDictionary() -> [String: Any] {
-        return ["schema": schema, "data": data]
+        if let data = data as? [String: Any] {
+            return data
+        } else {
+            return ["action": data]
+        }
     }
 }
 
