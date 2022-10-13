@@ -16,7 +16,7 @@ open class SessionConfiguration: NSObject, RSConfiguration {
         return _foregroundTimeoutInSeconds
     }
     
-    private var _backgroundTimeoutInSeconds: Int = 1800
+    private var _backgroundTimeoutInSeconds: Int = 300
     @objc
     public var backgroundTimeoutInSeconds: Int {
         return _backgroundTimeoutInSeconds
