@@ -1,5 +1,5 @@
 //
-//  RudderClient.swift
+//  RSTracker.swift
 //  RudderSnowplowMigrator
 //
 //  Created by Pallab Maiti on 26/09/22.
@@ -9,23 +9,23 @@ import Foundation
 import Rudder
 
 @objc
-open class RudderClient: NSObject {
-    private static let shared = RudderClient()
+open class RSTracker: NSObject {
+    private static let shared = RSTracker()
     
     @discardableResult @objc
-    public static func createTracker(writeKey: String, network: NetworkConfiguration) -> RudderClient {
+    public static func createTracker(writeKey: String, network: NetworkConfiguration) -> RSTracker {
         let trackerConfig = TrackerConfiguration()
         return createTracker(writeKey: writeKey, network: network, configurations: [trackerConfig])
     }
     
     @discardableResult @objc
-    public static func createTracker(writeKey: String, dataPlaneUrl: String) -> RudderClient {
+    public static func createTracker(writeKey: String, dataPlaneUrl: String) -> RSTracker {
         let network = NetworkConfiguration(dataPlaneUrl: dataPlaneUrl)
         return createTracker(writeKey: writeKey, network: network)
     }
     
     @discardableResult @objc
-    public static func createTracker(writeKey: String, network: NetworkConfiguration, configurations: [RSConfiguration]) -> RudderClient {
+    public static func createTracker(writeKey: String, network: NetworkConfiguration, configurations: [RSConfiguration]) -> RSTracker {
         var configBuilder = RSConfigBuilder()
             .withDataPlaneUrl(network.dataPlaneUrl)
             .withControlPlaneUrl(network.controlPlaneUrl)
@@ -55,12 +55,12 @@ open class RudderClient: NSObject {
                 RSClient.sharedInstance()?.identify(userId)
             }
         }
-        return RudderClient.shared
+        return RSTracker.shared
     }
     
     @objc
-    public static func getDefaultTracker() -> RudderClient {
-        return RudderClient.shared
+    public static func getDefaultTracker() -> RSTracker {
+        return RSTracker.shared
     }
     
     @discardableResult @objc

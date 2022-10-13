@@ -55,7 +55,7 @@ static NSString *APP_ID = @"appId";
     
     [SPSnowplow createTrackerWithNamespace:@"" network:spnc];
     
-    RudderClient *client = [RudderClient createTrackerWithWriteKey:@"" network:networkConfig];
+    RSTracker *tracker = [RSTracker createTrackerWithWriteKey:@"" network:networkConfig];
     
     RSStructured *st = [[RSStructured alloc] initWithCategory:@"Cat" action:@"Action"];
     st.value = 0;
@@ -66,7 +66,7 @@ static NSString *APP_ID = @"appId";
     
     RSForeground *fore = [[RSForeground alloc] initWithIndex:@1];
     
-    [client track:st];
+    [tracker track:st];
     
     RSSelfDescribingJson *rspj = [[RSSelfDescribingJson alloc] initWithSchema:@"" andData:@""];
     SPSelfDescribingJson *spj = [[SPSelfDescribingJson alloc] initWithSchema:@"" andData:@""];

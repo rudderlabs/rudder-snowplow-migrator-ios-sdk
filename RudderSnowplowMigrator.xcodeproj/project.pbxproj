@@ -15,7 +15,7 @@
 		ED5C261F28D8C05400B733F0 /* RudderSnowplowMigrator.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5C261128D8C05400B733F0 /* RudderSnowplowMigrator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED5C267128D8CC6E00B733F0 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267028D8CC6E00B733F0 /* NetworkConfiguration.swift */; };
 		ED5C267328D8D07C00B733F0 /* SessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267228D8D07C00B733F0 /* SessionConfiguration.swift */; };
-		ED5C267528D8E9DE00B733F0 /* RudderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267428D8E9DE00B733F0 /* RudderClient.swift */; };
+		ED5C267528D8E9DE00B733F0 /* RSTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267428D8E9DE00B733F0 /* RSTracker.swift */; };
 		ED5C267928D98D9100B733F0 /* TrackerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */; };
 		ED5C267B28D99A2400B733F0 /* RSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */; };
 		ED9DAF8D28D9C5B300CC0C95 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DAF8C28D9C5B300CC0C95 /* Event.swift */; };
@@ -55,7 +55,7 @@
 		ED5C261D28D8C05400B733F0 /* RudderSnowplowMigratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudderSnowplowMigratorTests.swift; sourceTree = "<group>"; };
 		ED5C267028D8CC6E00B733F0 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
 		ED5C267228D8D07C00B733F0 /* SessionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionConfiguration.swift; sourceTree = "<group>"; };
-		ED5C267428D8E9DE00B733F0 /* RudderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RudderClient.swift; sourceTree = "<group>"; };
+		ED5C267428D8E9DE00B733F0 /* RSTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTracker.swift; sourceTree = "<group>"; };
 		ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerConfiguration.swift; sourceTree = "<group>"; };
 		ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSConfiguration.swift; sourceTree = "<group>"; };
 		ED9DAF8C28D9C5B300CC0C95 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 			children = (
 				ED9DAF8B28D9C50300CC0C95 /* Events */,
 				ED5C266F28D8CC1B00B733F0 /* Configurations */,
-				ED5C267428D8E9DE00B733F0 /* RudderClient.swift */,
+				ED5C267428D8E9DE00B733F0 /* RSTracker.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				EDBEE70B28E2CAF500BC097F /* SelfDescribing.swift in Sources */,
 				ED0D832A28E1F96500DF2F56 /* ScreenView.swift in Sources */,
 				ED5C267928D98D9100B733F0 /* TrackerConfiguration.swift in Sources */,
-				ED5C267528D8E9DE00B733F0 /* RudderClient.swift in Sources */,
+				ED5C267528D8E9DE00B733F0 /* RSTracker.swift in Sources */,
 				ED9DAF8D28D9C5B300CC0C95 /* Event.swift in Sources */,
 				ED5C267B28D99A2400B733F0 /* RSConfiguration.swift in Sources */,
 				EDBEE70928E2C6D900BC097F /* Foreground.swift in Sources */,

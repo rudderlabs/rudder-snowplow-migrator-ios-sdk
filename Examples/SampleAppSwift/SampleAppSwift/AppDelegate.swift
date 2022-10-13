@@ -50,31 +50,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .networkUserId("networkUserId")
             .traits(["name": "name"])
         
-        let rsclient = RudderClient.createTracker(writeKey: "1wvsoF3Kx2SczQNlx1dvcqW9ODW", network: networkConfig, configurations: [sessionConfig, trackerConfig, subjectConfig])
+        let tracker = RSTracker.createTracker(writeKey: "1wvsoF3Kx2SczQNlx1dvcqW9ODW", network: networkConfig, configurations: [sessionConfig, trackerConfig, subjectConfig])
         
         let structured = Structured(category: "Cat", action: "Action")
             .properties(["key_1": ["key_key_1": "value_value_1"]])
         
-        rsclient.track(structured)
+        tracker.track(structured)
         
         let screen = ScreenView(name: "Screen_1", screenId: "1")
         
-        rsclient.track(screen)
+        tracker.track(screen)
         
         let foreground = Foreground(index: 1)
             .properties(["key_1": "value_1"])
         
-        rsclient.track(foreground)
+        tracker.track(foreground)
         
         let background = Background(index: 1)
             .properties(["key_1": "value_1"])
         
-        rsclient.track(background)
+        tracker.track(background)
         
         let selfDescribingJson = SelfDescribingJson(schema: "schema", andDictionary: ["action": "Action_2"])
         let selfDescribing = SelfDescribing(eventData: selfDescribingJson)
         
-        rsclient.track(selfDescribing)
+        tracker.track(selfDescribing)
         return true
     }
 
