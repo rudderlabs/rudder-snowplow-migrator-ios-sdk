@@ -14,6 +14,8 @@
 		ED5C264328D8C50800B733F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5C264228D8C50800B733F0 /* Assets.xcassets */; };
 		ED5C264628D8C50800B733F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5C264428D8C50800B733F0 /* LaunchScreen.storyboard */; };
 		ED5C264928D8C50800B733F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5C264828D8C50800B733F0 /* main.m */; };
+		EDBC209528FA8C86003152D8 /* Configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = EDBC209428FA8C86003152D8 /* Configuration.json */; };
+		EDBC209828FA8EB0003152D8 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBC209728FA8EB0003152D8 /* Configuration.m */; };
 		FEC871553FB852D54A65EBE1 /* Pods_SampleAppObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0CD0E78CC993CAD8FB1553 /* Pods_SampleAppObjC.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,9 @@
 		ED5C264528D8C50800B733F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5C264728D8C50800B733F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED5C264828D8C50800B733F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDBC209428FA8C86003152D8 /* Configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Configuration.json; path = ../../../Configuration.json; sourceTree = "<group>"; };
+		EDBC209628FA8EB0003152D8 /* Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		EDBC209728FA8EB0003152D8 /* Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +91,11 @@
 		ED5C263528D8C50700B733F0 /* SampleAppObjC */ = {
 			isa = PBXGroup;
 			children = (
+				EDBC209428FA8C86003152D8 /* Configuration.json */,
 				ED5C263628D8C50700B733F0 /* AppDelegate.h */,
 				ED5C263728D8C50700B733F0 /* AppDelegate.m */,
+				EDBC209628FA8EB0003152D8 /* Configuration.h */,
+				EDBC209728FA8EB0003152D8 /* Configuration.m */,
 				ED5C263928D8C50700B733F0 /* SceneDelegate.h */,
 				ED5C263A28D8C50800B733F0 /* SceneDelegate.m */,
 				ED5C263C28D8C50800B733F0 /* ViewController.h */,
@@ -162,6 +170,7 @@
 			files = (
 				ED5C264628D8C50800B733F0 /* LaunchScreen.storyboard in Resources */,
 				ED5C264328D8C50800B733F0 /* Assets.xcassets in Resources */,
+				EDBC209528FA8C86003152D8 /* Configuration.json in Resources */,
 				ED5C264128D8C50800B733F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBC209828FA8EB0003152D8 /* Configuration.m in Sources */,
 				ED5C263E28D8C50800B733F0 /* ViewController.m in Sources */,
 				ED5C263828D8C50700B733F0 /* AppDelegate.m in Sources */,
 				ED5C264928D8C50800B733F0 /* main.m in Sources */,

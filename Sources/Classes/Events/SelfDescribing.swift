@@ -44,7 +44,7 @@ open class SelfDescribingJson: NSObject {
         setData(object: selfDescribingJson.getAsDictionary())
     }
     
-    private func getAsDictionary() -> [String: Any] {
+    internal func getAsDictionary() -> [String: Any] {
         if let data = data as? [String: Any] {
             return data
         } else {
@@ -67,7 +67,7 @@ open class SelfDescribing: NSObject, Event {
     @objc
     public init(eventData: SelfDescribingJson) {
         schema = eventData.schema
-        payload = eventData.data as? [String: Any]
+        payload = eventData.getAsDictionary()
     }
     
     public func getProperties() -> [String : Any]? {

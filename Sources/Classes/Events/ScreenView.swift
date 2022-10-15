@@ -15,10 +15,10 @@ open class ScreenView: NSObject, Event {
         return _name
     }
     
-    private let _screenId: String
+    private let _id: String
     @objc
     public var screenId: String {
-        return _screenId
+        return _id
     }
     
     @objc
@@ -46,9 +46,9 @@ open class ScreenView: NSObject, Event {
     public var properties: [String: Any]?
     
     @objc
-    public init(name: String, screenId: String) {
+    public init(name: String, screenId: UUID? = nil) {
         _name = name
-        _screenId = screenId
+        _id = screenId?.uuidString ?? UUID().uuidString
     }
     
     @discardableResult @objc
