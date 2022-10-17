@@ -55,8 +55,7 @@ open class Structured: NSObject, Event {
     public func value(_ value: NSNumber) -> Structured {
         self.value = value
         return self
-    }
-    
+    }    
     
     @discardableResult @objc
     public func properties(_ properties: [String: Any]?) -> Structured {
@@ -75,6 +74,6 @@ open class Structured: NSObject, Event {
         if let structuredProperties = self.properties {
             properties.merge(structuredProperties) { (new, _) in new }
         }
-        return properties.count > 0 ? properties : nil
+        return !properties.isEmpty ? properties : nil
     }
 }

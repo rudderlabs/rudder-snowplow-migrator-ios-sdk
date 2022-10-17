@@ -189,7 +189,7 @@ open class SubjectConfiguration: NSObject, RSConfiguration {
         if let identifyTraits = self.traits {
             traits.merge(identifyTraits) { (new, _) in new }
         }
-        return traits.count > 0 ? traits : nil
+        return !traits.isEmpty ? traits : nil
     }
     
     internal func setUserData(to userId: inout String?, identifyTraits: inout [String: Any]?) {

@@ -31,62 +31,47 @@ public enum LogLevel: Int {
 
 @objc(RSTrackerConfiguration)
 open class TrackerConfiguration: NSObject, RSConfiguration {
-    
     @objc
     public var appId: String = ""
-    
-    
+        
     @objc
     public var base64Encoding: Bool = true
-    
-    
+        
     @objc
     public var logLevel: LogLevel = .off
-    
-    
+        
     @objc
     public var sessionContext: Bool = true
-    
-    
+        
     @objc
     public var deepLinkContext: Bool = true
-    
-    
+        
     @objc
     public var applicationContext: Bool = true
-    
-    
+        
     @objc
     public var platformContext: Bool = true
-    
     
     @objc
     public var geoLocationContext: Bool = false
     
-    
     @objc
     public var screenContext: Bool = true
-    
     
     @objc
     public var screenViewAutotracking: Bool = true
     
-    
     @objc
     public var lifecycleAutotracking: Bool = true
-    
     
     @objc
     public var installAutotracking: Bool = true
     
-    
     @objc
     public var exceptionAutotracking: Bool = true
     
-    
     @objc
-    public var diagnosticAutotracking: Bool = false
-    
+    public var diagnosticAutotracking: Bool = false    
     
     @objc
     public var userAnonymisation: Bool = false

@@ -94,7 +94,7 @@ open class RSTracker: NSObject {
             if var properties = e.payload {
                 if let action = properties["action"] as? String {
                     properties.removeValue(forKey: "action")
-                    if properties.count > 0 {
+                    if !properties.isEmpty {
                         RSClient.sharedInstance()?.track(action, properties: properties)
                     } else {
                         RSClient.sharedInstance()?.track(action)

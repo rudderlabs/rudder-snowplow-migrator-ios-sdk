@@ -3,7 +3,7 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - Rudder (1.7.0)
-  - RudderSnowplowMigrator (1.0.0):
+  - RudderSnowplowMigrator (1.0.0.beta.1):
     - Rudder (~> 1.7.0)
   - SnowplowTracker (4.0.0):
     - FMDB (~> 2.7)
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Rudder: b87d9230533ca42a5f48d20d605485cee69e663f
-  RudderSnowplowMigrator: 922c540d47cd3b2d21799a47cdeff273aa500ad9
+  RudderSnowplowMigrator: d0d086364b719288be0a9bb7dd802ba1cc39e229
   SnowplowTracker: 2ddc6db70af5415a87ac279f044d27d140b3a2b8
 
 PODFILE CHECKSUM: 928ef571a788c5d6e25ffae934ca5657066a8806

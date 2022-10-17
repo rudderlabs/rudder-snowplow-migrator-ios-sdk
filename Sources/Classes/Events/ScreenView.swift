@@ -110,6 +110,6 @@ open class ScreenView: NSObject, Event {
         if let screenProperties = self.properties {
             properties.merge(screenProperties) { (new, _) in new }
         }
-        return properties.count > 0 ? properties : nil
+        return !properties.isEmpty ? properties : nil
     }
 }

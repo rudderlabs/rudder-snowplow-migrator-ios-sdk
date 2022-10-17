@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72D7CF489BBA26A98BCEF8C1 /* Pods_RudderSnowplowMigrator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDADE0C99C1A6B52AEAD5DEA /* Pods_RudderSnowplowMigrator.framework */; };
+		599538849814BC925A2E5038 /* Pods_RudderSnowplowMigrator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B644DBBB10E9629291D2A /* Pods_RudderSnowplowMigrator.framework */; };
 		ED0D832A28E1F96500DF2F56 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D832928E1F96500DF2F56 /* ScreenView.swift */; };
 		ED5C261328D8C05400B733F0 /* RudderSnowplowMigrator.docc in Sources */ = {isa = PBXBuildFile; fileRef = ED5C261228D8C05400B733F0 /* RudderSnowplowMigrator.docc */; };
 		ED5C261928D8C05400B733F0 /* RudderSnowplowMigrator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5C260E28D8C05400B733F0 /* RudderSnowplowMigrator.framework */; };
@@ -37,9 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35FCF33F25EF7E4445C20765 /* Pods-RudderSnowplowMigrator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderSnowplowMigrator.debug.xcconfig"; path = "Target Support Files/Pods-RudderSnowplowMigrator/Pods-RudderSnowplowMigrator.debug.xcconfig"; sourceTree = "<group>"; };
-		AFE2476A3EAE55D9B2621469 /* Pods-RudderSnowplowMigrator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderSnowplowMigrator.release.xcconfig"; path = "Target Support Files/Pods-RudderSnowplowMigrator/Pods-RudderSnowplowMigrator.release.xcconfig"; sourceTree = "<group>"; };
-		DDADE0C99C1A6B52AEAD5DEA /* Pods_RudderSnowplowMigrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderSnowplowMigrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848B644DBBB10E9629291D2A /* Pods_RudderSnowplowMigrator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RudderSnowplowMigrator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B989202081941E92EBFE2672 /* Pods-RudderSnowplowMigrator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderSnowplowMigrator.debug.xcconfig"; path = "Target Support Files/Pods-RudderSnowplowMigrator/Pods-RudderSnowplowMigrator.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0D832228E1A17D00DF2F56 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		ED0D832328E1A17D00DF2F56 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		ED0D832428E1A17D00DF2F56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -58,12 +57,14 @@
 		ED5C267428D8E9DE00B733F0 /* RSTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTracker.swift; sourceTree = "<group>"; };
 		ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerConfiguration.swift; sourceTree = "<group>"; };
 		ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSConfiguration.swift; sourceTree = "<group>"; };
+		ED8740AF28FD556600ABEFBB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		ED9DAF8C28D9C5B300CC0C95 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		ED9DAF8E28D9C5D800CC0C95 /* Structured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structured.swift; sourceTree = "<group>"; };
 		ED9DAF9028DA055700CC0C95 /* SubjectConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectConfiguration.swift; sourceTree = "<group>"; };
 		EDBEE70628E2C25000BC097F /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		EDBEE70828E2C6D900BC097F /* Foreground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foreground.swift; sourceTree = "<group>"; };
 		EDBEE70A28E2CAF500BC097F /* SelfDescribing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfDescribing.swift; sourceTree = "<group>"; };
+		EF0155EBD15057CD09EECE37 /* Pods-RudderSnowplowMigrator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RudderSnowplowMigrator.release.xcconfig"; path = "Target Support Files/Pods-RudderSnowplowMigrator/Pods-RudderSnowplowMigrator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72D7CF489BBA26A98BCEF8C1 /* Pods_RudderSnowplowMigrator.framework in Frameworks */,
+				599538849814BC925A2E5038 /* Pods_RudderSnowplowMigrator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,10 +87,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81B308EF7151663EE32D9C42 /* Frameworks */ = {
+		4048F89841EB5AB23756ABE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDADE0C99C1A6B52AEAD5DEA /* Pods_RudderSnowplowMigrator.framework */,
+				848B644DBBB10E9629291D2A /* Pods_RudderSnowplowMigrator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,6 +98,7 @@
 		ED5C260428D8C05400B733F0 = {
 			isa = PBXGroup;
 			children = (
+				ED8740AF28FD556600ABEFBB /* .swiftlint.yml */,
 				ED0D832228E1A17D00DF2F56 /* CODE_OF_CONDUCT.md */,
 				ED0D832528E1A17D00DF2F56 /* CODEOWNERS */,
 				ED0D832328E1A17D00DF2F56 /* CONTRIBUTING.md */,
@@ -108,7 +110,7 @@
 				ED5C261C28D8C05400B733F0 /* RudderSnowplowMigratorTests */,
 				ED5C260F28D8C05400B733F0 /* Products */,
 				F656F8E6A48B2A5A1937B0E4 /* Pods */,
-				81B308EF7151663EE32D9C42 /* Frameworks */,
+				4048F89841EB5AB23756ABE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,8 +187,8 @@
 		F656F8E6A48B2A5A1937B0E4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				35FCF33F25EF7E4445C20765 /* Pods-RudderSnowplowMigrator.debug.xcconfig */,
-				AFE2476A3EAE55D9B2621469 /* Pods-RudderSnowplowMigrator.release.xcconfig */,
+				B989202081941E92EBFE2672 /* Pods-RudderSnowplowMigrator.debug.xcconfig */,
+				EF0155EBD15057CD09EECE37 /* Pods-RudderSnowplowMigrator.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -209,11 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED5C262228D8C05400B733F0 /* Build configuration list for PBXNativeTarget "RudderSnowplowMigrator" */;
 			buildPhases = (
-				4773BB115123551DB80F3156 /* [CP] Check Pods Manifest.lock */,
+				F28B82F78CD8C3D3AF756023 /* [CP] Check Pods Manifest.lock */,
 				ED5C260928D8C05400B733F0 /* Headers */,
 				ED5C260A28D8C05400B733F0 /* Sources */,
 				ED5C260B28D8C05400B733F0 /* Frameworks */,
 				ED5C260C28D8C05400B733F0 /* Resources */,
+				EDBC209A28FD2BFD003152D8 /* SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -297,7 +300,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4773BB115123551DB80F3156 /* [CP] Check Pods Manifest.lock */ = {
+		EDBC209A28FD2BFD003152D8 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F28B82F78CD8C3D3AF756023 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,7 +504,7 @@
 		};
 		ED5C262328D8C05400B733F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35FCF33F25EF7E4445C20765 /* Pods-RudderSnowplowMigrator.debug.xcconfig */;
+			baseConfigurationReference = B989202081941E92EBFE2672 /* Pods-RudderSnowplowMigrator.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -517,7 +538,7 @@
 		};
 		ED5C262428D8C05400B733F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFE2476A3EAE55D9B2621469 /* Pods-RudderSnowplowMigrator.release.xcconfig */;
+			baseConfigurationReference = EF0155EBD15057CD09EECE37 /* Pods-RudderSnowplowMigrator.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;

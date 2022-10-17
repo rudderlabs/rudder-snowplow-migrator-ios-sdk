@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2EA622BA068315575A476ED /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186076483385604F34CC2CCA /* Pods_SampleAppSwift.framework */; };
+		709624353ACD6F15A961B9D9 /* Pods_SampleAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB389CAD5255EA440AB09CFC /* Pods_SampleAppSwift.framework */; };
 		ED5C265C28D8C55A00B733F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C265B28D8C55A00B733F0 /* AppDelegate.swift */; };
 		ED5C265E28D8C55A00B733F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C265D28D8C55A00B733F0 /* SceneDelegate.swift */; };
 		ED5C266028D8C55A00B733F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C265F28D8C55A00B733F0 /* ViewController.swift */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		186076483385604F34CC2CCA /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A068C7CCDBB5BE1270D878B /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
-		59B15F13C62CF602BCF79F69 /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		57FBED50DADD7C2C6107CF00 /* Pods-SampleAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.release.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.release.xcconfig"; sourceTree = "<group>"; };
+		AB389CAD5255EA440AB09CFC /* Pods_SampleAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C130B8B26044B496D58BF570 /* Pods-SampleAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		ED5C265828D8C55A00B733F0 /* SampleAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5C265B28D8C55A00B733F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5C265D28D8C55A00B733F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,29 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2EA622BA068315575A476ED /* Pods_SampleAppSwift.framework in Frameworks */,
+				709624353ACD6F15A961B9D9 /* Pods_SampleAppSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01BF348A2A36F40F76FAA34B /* Pods */ = {
+		5A1FF73F509C94820539EC38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59B15F13C62CF602BCF79F69 /* Pods-SampleAppSwift.debug.xcconfig */,
-				3A068C7CCDBB5BE1270D878B /* Pods-SampleAppSwift.release.xcconfig */,
+				AB389CAD5255EA440AB09CFC /* Pods_SampleAppSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC115DA9391CFA1AFC32B7EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C130B8B26044B496D58BF570 /* Pods-SampleAppSwift.debug.xcconfig */,
+				57FBED50DADD7C2C6107CF00 /* Pods-SampleAppSwift.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
-			sourceTree = "<group>";
-		};
-		E61AA20562938A38D9ADD40D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				186076483385604F34CC2CCA /* Pods_SampleAppSwift.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ED5C264F28D8C55A00B733F0 = {
@@ -65,8 +65,8 @@
 			children = (
 				ED5C265A28D8C55A00B733F0 /* SampleAppSwift */,
 				ED5C265928D8C55A00B733F0 /* Products */,
-				01BF348A2A36F40F76FAA34B /* Pods */,
-				E61AA20562938A38D9ADD40D /* Frameworks */,
+				BC115DA9391CFA1AFC32B7EC /* Pods */,
+				5A1FF73F509C94820539EC38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED5C266C28D8C55B00B733F0 /* Build configuration list for PBXNativeTarget "SampleAppSwift" */;
 			buildPhases = (
-				D7952F295041E14DD87D2F12 /* [CP] Check Pods Manifest.lock */,
+				BC2D083B075ED6E4E9815521 /* [CP] Check Pods Manifest.lock */,
 				ED5C265428D8C55A00B733F0 /* Sources */,
 				ED5C265528D8C55A00B733F0 /* Frameworks */,
 				ED5C265628D8C55A00B733F0 /* Resources */,
-				978820353C8AE19CF1BFD664 /* [CP] Embed Pods Frameworks */,
+				448E9C0CE62FB41CF823C3CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +161,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		978820353C8AE19CF1BFD664 /* [CP] Embed Pods Frameworks */ = {
+		448E9C0CE62FB41CF823C3CA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +178,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleAppSwift/Pods-SampleAppSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D7952F295041E14DD87D2F12 /* [CP] Check Pods Manifest.lock */ = {
+		BC2D083B075ED6E4E9815521 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,12 +351,12 @@
 		};
 		ED5C266D28D8C55B00B733F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59B15F13C62CF602BCF79F69 /* Pods-SampleAppSwift.debug.xcconfig */;
+			baseConfigurationReference = C130B8B26044B496D58BF570 /* Pods-SampleAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleAppSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -368,7 +368,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.SampleAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -379,12 +379,12 @@
 		};
 		ED5C266E28D8C55B00B733F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A068C7CCDBB5BE1270D878B /* Pods-SampleAppSwift.release.xcconfig */;
+			baseConfigurationReference = 57FBED50DADD7C2C6107CF00 /* Pods-SampleAppSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleAppSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -396,7 +396,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.SampleAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

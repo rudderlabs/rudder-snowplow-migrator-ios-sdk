@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 @objc(RSSelfDescribingJson)
 open class SelfDescribingJson: NSObject {
     var schema: String
@@ -59,7 +58,7 @@ open class SelfDescribing: NSObject, Event {
     let payload: [String: Any]?
     
     @objc
-    public init(schema: String, payload: [String : Any]) {
+    public init(schema: String, payload: [String: Any]) {
         self.schema = schema
         self.payload = payload
     }
@@ -70,7 +69,7 @@ open class SelfDescribing: NSObject, Event {
         payload = eventData.getAsDictionary()
     }
     
-    public func getProperties() -> [String : Any]? {
+    public func getProperties() -> [String: Any]? {
         return nil
     }
 }
