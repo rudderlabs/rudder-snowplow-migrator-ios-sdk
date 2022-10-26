@@ -13,9 +13,7 @@ opt_in_rules: # some rules are turned off by default, so you need to opt-in
 excluded: # paths to ignore during linting. Takes precedence over `included`.
     - Carthage
     - Pods
-    - Source/ExcludedFolder
-    - Source/ExcludedFile.swift
-    - Source/*/ExcludedFile.swift # Exclude files with a wildcard
+    - Examples
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
     - explicit_self
 
@@ -27,6 +25,7 @@ force_try:
 # rules that have both warning and error levels, can set just the warning level
 # implicitly
 line_length: 250
+cyclomatic_complexity: 20
 # they can set both implicitly with an array
 type_body_length:
     - 300 # warning
