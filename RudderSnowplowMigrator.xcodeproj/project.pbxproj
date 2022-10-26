@@ -57,7 +57,9 @@
 		ED5C267428D8E9DE00B733F0 /* RSTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTracker.swift; sourceTree = "<group>"; };
 		ED5C267828D98D9100B733F0 /* TrackerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerConfiguration.swift; sourceTree = "<group>"; };
 		ED5C267A28D99A2400B733F0 /* RSConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSConfiguration.swift; sourceTree = "<group>"; };
-		ED8740AF28FD556600ABEFBB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		ED857DE02909019000B7BFCE /* workflows */ = {isa = PBXFileReference; lastKnownFileType = folder; name = workflows; path = .github/workflows; sourceTree = "<group>"; };
+		ED857DE12909019C00B7BFCE /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = pull_request_template.md; path = .github/pull_request_template.md; sourceTree = "<group>"; };
+		ED857DE22909022E00B7BFCE /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		ED9DAF8C28D9C5B300CC0C95 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		ED9DAF8E28D9C5D800CC0C95 /* Structured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structured.swift; sourceTree = "<group>"; };
 		ED9DAF9028DA055700CC0C95 /* SubjectConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectConfiguration.swift; sourceTree = "<group>"; };
@@ -98,7 +100,9 @@
 		ED5C260428D8C05400B733F0 = {
 			isa = PBXGroup;
 			children = (
-				ED8740AF28FD556600ABEFBB /* .swiftlint.yml */,
+				ED857DE02909019000B7BFCE /* workflows */,
+				ED857DE22909022E00B7BFCE /* CHANGELOG.md */,
+				ED857DE12909019C00B7BFCE /* pull_request_template.md */,
 				ED0D832228E1A17D00DF2F56 /* CODE_OF_CONDUCT.md */,
 				ED0D832528E1A17D00DF2F56 /* CODEOWNERS */,
 				ED0D832328E1A17D00DF2F56 /* CONTRIBUTING.md */,
@@ -523,7 +527,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0.beta.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigrator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -557,7 +561,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0.beta.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigrator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -577,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0.beta.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -593,7 +597,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0.beta.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rudderstack.RudderSnowplowMigratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;

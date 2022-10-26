@@ -4,12 +4,7 @@
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 ## Checklist:
 - [ ] Version updated in `README`
-- [ ] Version updated in `RSConstant.swift`
-- [ ] Version updated in `RudderStack.xcodeproj`
-- [ ] Version updated in `RudderStack.podspec`
+- [ ] Version updated in `RudderSnowplowMigrator.xcodeproj`
+- [ ] Version updated in `RudderSnowplowMigrator.podspec`
 - [ ] `CHANGELOG` Updated
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have added unit tests for the code
-- [ ] I have made corresponding changes to the documentation
-- [ ] Passed `pod lib lint --no-clean --allow-warnings`
