@@ -65,6 +65,10 @@ To integrate and initialize the iOS SDK, you will need the source write key and 
 - To get the source write key, follow [**this guide**](https://www.rudderstack.com/docs/get-started/glossary/#write-key).
 - To get the data plane URL, follow [**this guide**](https://www.rudderstack.com/docs/rudderstack-cloud/dashboard-overview/#data-plane-url).
 
+## Setting the configuration objects
+
+RudderStack supports setting values for the Snowplow configuration objects. Refer to the [detailed documentation](https://www.rudderstack.com/docs/user-guides/migration-guides/snowplow-migration-guide/#setting-the-configuration-objects-for-mobile-sdks) for more information on setting and using these objects.
+
 ## Updating class names
 
 The below table lists the corresponding class names in Snowplow and RudderStack which need to be updated:
