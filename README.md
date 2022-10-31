@@ -38,7 +38,13 @@ pod 'RudderSnowplowMigrator', '1.0.0.beta.1'
 pod install
 ```
 
-3. Update your SDK initialization to any one of the following snippet (method 1, 2, or 3). Also, replace the `WRITE_KEY` and `DATA_PLANE_URL`.
+3. Add the following code in all the `.m` and`.h` files where you want to refer or use the RudderStack SDK classes:
+
+```objectivec
+@import RudderSnowplowMigrator;
+```
+
+4. Update your SDK initialization to any one of the following snippet (method 1, 2, or 3). Also, replace the `WRITE_KEY` and `DATA_PLANE_URL`.
 
 ```objectivec
 //Method 1: Default values are considered for all the configuration objects 
